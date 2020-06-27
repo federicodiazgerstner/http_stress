@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 25%;
+  font-family: 'Noto Sans JP', sans-serif;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.tablink:hover {
+  background-color: grey;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  
+}
+
+.texto {
+    padding: 0% 10% 5% 10%;
+}
+
+h3{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 35px;
+}
+
+h4{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 30px;
+}
+
+p{
+    font-size: 18px;
+}
+.imagenes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.foto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 5%;
+}
+#DosAttack {background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.849),rgba(0, 0, 0, 0.849)), url(https://i.pinimg.com/originals/d4/8c/19/d48c19802bdc2528c4c1fc08f8ab27e3.png) ;background-size: cover;}
+#Proyecto {background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.849),rgba(0, 0, 0, 0.849)), url(https://i.pinimg.com/originals/d4/8c/19/d48c19802bdc2528c4c1fc08f8ab27e3.png) ;background-size: cover;}
+#Integrantes {background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.849),rgba(0, 0, 0, 0.849)), url(https://i.pinimg.com/originals/d4/8c/19/d48c19802bdc2528c4c1fc08f8ab27e3.png) ;background-size: cover;}
+#Proximamente {background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.849),rgba(0, 0, 0, 0.849)), url(https://i.pinimg.com/originals/d4/8c/19/d48c19802bdc2528c4c1fc08f8ab27e3.png) ;background-size: cover;}
+</style>
+</head>
+<body>
+<title> Dos Attack - Grupo 4 </title>
+<button class="tablink" onclick="openPage('DosAttack', this, 'red')" id="defaultOpen">Dos Attack</button>
+<button class="tablink" onclick="openPage('Proyecto', this, 'green')">Proyecto</button>
+<button class="tablink" onclick="openPage('Integrantes', this, 'blue')">Integrantes</button>
+<button class="tablink" onclick="openPage('Proximamente', this, 'orange')">PROXIMAMENTE</button>
+
+<div id="DosAttack" class="tabcontent">
+  <div class="texto">
+    <h3>¿Qué es un DoS o Ataque de denegación de servicio?</h3>
+  <p>Un ataque de denegación de servicio (DoS) es un tipo de ataque cibernético en el que un actor malintencionado tiene como objetivo hacer que una computadora u otro dispositivo no esté disponible para sus usuarios previstos al interrumpir el funcionamiento normal del dispositivo. Los ataques DoS generalmente funcionan abrumando o inundando una máquina objetivo con solicitudes hasta que no se pueda procesar el tráfico normal, lo que resulta en la denegación de servicio a los usuarios adicionales. Un ataque DoS se caracteriza por usar una sola computadora para lanzar el ataque.</p>
+  <h3>¿Cómo funciona un ataque DoS?</h3>
+  <p>El objetivo principal de un ataque DoS es sobresaturar la capacidad de una máquina objetivo, lo que resulta en la denegación de servicio a solicitudes adicionales. Los múltiples vectores de ataque de los ataques DoS se pueden agrupar por sus similitudes.<br>
+    <p></p>
+    Los ataques DoS generalmente se dividen en 2 categorías:
+    <p></p>
+        Ataques de desbordamiento de búfer
+        Un tipo de ataque en el que un desbordamiento del búfer de memoria puede hacer que una máquina consuma todo el espacio disponible en el disco duro, la memoria o el tiempo de CPU. Esta forma de explotación a menudo resulta en un comportamiento lento, fallas del sistema u otros comportamientos perjudiciales del servidor, lo que resulta en la denegación de servicio.
+    <p></p>
+        Ataques de inundación
+        Al saturar un servidor objetivo con una cantidad abrumadora de paquetes, un actor malintencionado puede sobresaturar la capacidad del servidor, lo que resulta en la denegación de servicio. Para que la mayoría de los ataques de inundación DoS sean exitosos, el actor malicioso debe tener más ancho de banda disponible que el objetivo.</p>
+        <img class ="imagenes"src="https://thumbs.gfycat.com/DigitalPastelDartfrog-size_restricted.gif" alt="">
+        <h3>¿Cómo puede saber si una computadora está experimentando un ataque DoS?</h3>
+        <p>Si bien puede ser difícil separar un ataque de otros errores de conectividad de red o un gran consumo de ancho de banda, algunas características pueden indicar que un ataque está en marcha.
+    <p></p>
+            Los indicadores de un ataque DoS incluyen:
+    <p></p>   
+    <ul>
+        <li>Rendimiento de red atípicamente lento, como largos tiempos de carga para archivos o sitios web</li>
+        <li>La imposibilidad de cargar un sitio web en particular, como su propiedad web</li>      
+        <li>Una pérdida repentina de conectividad entre dispositivos en la misma red</li>     
+    </ul> 
+    </p>
+    <h3>¿Cuál es la diferencia entre un ataque DDoS y un ataque DOS?</h3>
+    <p>La diferencia distintiva entre DDoS y DoS es la cantidad de conexiones utilizadas en el ataque. Algunos ataques DoS, como los ataques " bajos y lentos " como Slowloris , derivan su poder en la simplicidad y los requisitos mínimos necesarios para que sean efectivos.</p>
+    <img class ="imagenes" src="https://www.cloudflare.com/img/learning/ddos/glossary/dos-attack/dos-vs-ddos-attack.png" alt="imagen">
+    <p>DoS utiliza una única conexión, mientras que un ataque DDoS utiliza muchas fuentes de tráfico de ataque, a menudo en forma de botnet . En términos generales, muchos de los ataques son fundamentalmente similares y pueden intentarse utilizando una fuente más de tráfico malicioso</p>    
+</div>
+</div>
+
+<div id="Proyecto" class="tabcontent">
+  <div class="texto">
+    <h3>¿Cuál es el objetivo del Proyecto?</h3>
+  <p>El objetivo es simple, ver como funcionan los Ataques DoS del lado del atacacante, y ver que pasa con la página web de la victima </p>
+  <p>Esta página web actualmente esta cargada en una máquina virtual, para no probar el ataque en páginas web reales y evitar problemas, no queremos que nos caiga el FBI!!</p> 
+ <img class="imagenes" src="https://media2.giphy.com/media/1I5ZQjwQnE5YQ/giphy.gif?cid=ecf05e47884cb6a5e0c8d4217703808feb75d0e9470b6b52&rid=giphy.gif" alt="">
+</div>
+</div>
+
+<div id="Integrantes" class="tabcontent">
+  <div class="texto">
+    <h3>Grupo 4 - Integrantes:</h3>
+  <img class="foto" src="https://www.webcampus.uade.edu.ar/Fotos/0/ID_1016950.jpg" alt="kian.jpg">
+  <h4>Afsharinejad kian</h4>
+  <img class="foto" src="https://www.webcampus.uade.edu.ar/Fotos/8/ID_1018238.jpg" alt="">
+  <h4>Díaz Gerstner, Federico</h4>
+  <img class="foto" src="https://www.webcampus.uade.edu.ar/Fotos/3/ID_1015193.jpg" alt="">
+  <h4>Ortiz Hernandez, Christian Enzo</h4>
+  <img class="foto" src="https://www.webcampus.uade.edu.ar/Fotos/7/ID_1015717.jpg" alt="">
+  <h4>Sanchez Rafael Esteban</h4>
+</div>
+</div>
+
+<div id="Proximamente" class="tabcontent">
+  <h3>Acá no hay nada pibe</h3>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html> 
